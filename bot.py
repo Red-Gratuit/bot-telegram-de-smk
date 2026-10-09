@@ -71,7 +71,7 @@ def handle_start(chat_id):
     text = """🌟 BIENVENUE CHEZ SMK 🇳🇱 🇺🇸
 VOUS TROUVER VOTRE MENU SUR NOTRE MINI-APP 📱
 🔥 Produits Premium - 59-62 🔥
-cONTACTEZ-NOUS SUR SNAPCHAT / TELEGRAM POUR PLUS D'INFOS ET COMMANDE 📸"""
+    CONTACTEZ-NOUS SUR SNAPCHAT / TELEGRAM POUR PLUS D'INFOS ET COMMANDE 📸"""
 
     reply_markup = {
         "inline_keyboard": [
