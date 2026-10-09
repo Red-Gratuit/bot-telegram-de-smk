@@ -68,9 +68,10 @@ def send_photo(chat_id, caption, reply_markup=None):
 
 
 def handle_start(chat_id):
-    text = """🌟 BIENVENUE CHEZ SMK_5962
-NOUS TE LAISSONS NAVIGUER SUR NOTRE MINI-APP 📱
-🔥 Produits Premium - 59-62 🔥"""
+    text = """🌟 BIENVENUE CHEZ SMK 🇳🇱 🇺🇸
+VOUS TROUVER VOTRE MENU SUR NOTRE MINI-APP 📱
+🔥 Produits Premium - 59-62 🔥
+cONTACTEZ-NOUS SUR SNAPCHAT / TELEGRAM POUR PLUS D'INFOS ET COMMANDE 📸"""
 
     reply_markup = {
         "inline_keyboard": [
