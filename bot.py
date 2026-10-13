@@ -13,6 +13,7 @@ BOT_TOKEN = os.environ.get("BOT_TOKEN")
 TELEGRAM_API_URL = f"https://api.telegram.org/bot{BOT_TOKEN}" if BOT_TOKEN else ""
 CANAL_URL = "https://t.me/+Rtlzo2L60CZhYmVk"
 CONTACT_URL = "https://snapchat.com/add/smk_5962"
+TELEGRAM_CONTACT_URL = "https://t.me/ssmk590"
 PRODUCTS_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "products.json")
 products_lock = Lock()
 
@@ -68,15 +69,19 @@ def send_photo(chat_id, caption, reply_markup=None):
 
 
 def handle_start(chat_id):
-    text = """🌟 BIENVENUE CHEZ SMK 🇳🇱 🇺🇸
-VOUS TROUVER VOTRE MENU SUR NOTRE MINI-APP 📱
-🔥 Produits Premium - 59-62 🔥
-    CONTACTEZ-NOUS SUR SNAPCHAT / TELEGRAM POUR PLUS D'INFOS ET COMMANDE 📸"""
+    text = """BIENVENUE CHEZ SMK🇳🇱🇺🇸
+
+NOTRE MENU EST AFFICHER SUR LA MINI APP📲
+
+CONTACTEZ NOUS SUR SNAPCHAT 👻 OU TELEGRAM 📲✨
+
+LIVRAISON 59/62 EXPRESS⚡️🚚"""
 
     reply_markup = {
         "inline_keyboard": [
             [{"text": "📢 CANAL TELEGRAM ↗", "url": CANAL_URL}],
             [{"text": "📸 SNAPCHAT ↗", "url": CONTACT_URL}],
+            [{"text": "📱 CONTACT TELEGRAM ↗", "url": TELEGRAM_CONTACT_URL}],
             [{"text": "📱 MENU MINI-APP", "web_app": {"url": MINI_APP_URL}}],
         ]
     }
